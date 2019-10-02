@@ -1,0 +1,29 @@
+.layout-container {
+  text-align: center;
+  padding: 1vh 10vw;
+}
+
+ul#navbar {
+  margin-bottom: 4em;
+}
+
+ul#navbar li {
+  display: inline-flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-right: 2em;
+}
+
+ul#navbar li a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: black;
+}
+
+ul#navbar li a:hover {
+  color: orange;
+}
+
+ul#navbar li.active a {
+  color: orange;
+}

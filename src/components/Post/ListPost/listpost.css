@@ -1,0 +1,36 @@
+.list-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-item {
+  width: 42%;
+  border: 1px solid black;
+  box-shadow: 5px 5px gray;
+  padding: 2em;
+  margin-bottom: 1em;
+  min-height: 8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.list-item__title {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.list-item__author {
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 1200px) {
+  .list-item {
+    width: 100%;
+  }
+}

@@ -1,0 +1,23 @@
+.detail-container {
+  width: 100%;
+  padding: 1vw;
+  border: 1px solid black;
+  box-shadow: 5px 5px gray;
+}
+
+.detail-container div {
+  margin-bottom: 1em
+}
+
+.detail-container__title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.detail-container__body {
+  font-size: 1.5em;
+}
+
+.detail-container__author {
+  font-size: 1.2em;
+}
