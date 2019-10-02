@@ -1,3 +1,5 @@
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 ## How to run the project:
 
 Install json-server for Mock API Server:
@@ -7,9 +9,6 @@ Start the server:
 And run the project with:
 ### `npm start`
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
