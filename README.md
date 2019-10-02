@@ -1,8 +1,9 @@
-## Install json-server for Mock API Server
+## How to run the project:
+
+Install json-server for Mock API Server:
 ### `npm install -g json-server`
 ### `json-server --watch db.json --port 3001`
-
-## Start the project
+And start the project with:
 ### `npm start`
 
 Runs the app in the development mode.<br>
