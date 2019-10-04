@@ -32,75 +32,15 @@
     },
     {
       "id": 6,
-      "title": "test",
-      "content": "test desc",
-      "author": "dito"
+      "title": "test1",
+      "content": "test",
+      "author": "yo"
     },
     {
       "id": 7,
       "title": "test2",
-      "content": "testtt",
-      "author": "doto"
-    },
-    {
-      "id": 8,
-      "title": "test3",
-      "content": "testtt",
-      "author": "doti"
-    },
-    {
-      "id": 9,
-      "title": "asdasd",
-      "content": "sadasd",
-      "author": "sdasd"
-    },
-    {
-      "id": 10,
-      "title": "aaa",
-      "content": "aaa",
-      "author": "aaa"
-    },
-    {
-      "id": 11,
-      "title": "asdsad",
-      "content": "sdsad",
-      "author": "asdsad"
-    },
-    {
-      "id": 12,
-      "title": "asdasd",
-      "content": "asdasd",
-      "author": "asdddddd"
-    },
-    {
-      "id": 13,
-      "title": "asdsdadsasd",
-      "content": "sadasdadasd",
-      "author": "asdasdasdad"
-    },
-    {
-      "id": 14,
-      "title": "aaaaxxx",
-      "content": "asdasd",
-      "author": "asdasd"
-    },
-    {
-      "id": 15,
-      "title": "terrr",
-      "content": "ttt",
-      "author": "ttt"
-    },
-    {
-      "id": 16,
-      "title": "test",
-      "content": "test123",
-      "author": "yonglex"
-    },
-    {
-      "id": 17,
-      "title": "test123",
-      "content": "test1231231",
-      "author": "yuhu"
+      "content": "test desc",
+      "author": "author"
     }
   ]
 }

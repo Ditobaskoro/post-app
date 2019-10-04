@@ -1,8 +1,10 @@
 .detail-container {
-  width: 100%;
-  padding: 1vw;
+  width: 90%;
+  padding: 2em 1vw;
   border: 1px solid black;
+  border-radius: 10px;
   box-shadow: 5px 5px gray;
+  background-color: #fff;
 }
 
 .detail-container div {

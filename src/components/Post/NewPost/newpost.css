@@ -1,9 +1,11 @@
-.detail-container {
+.post-container {
   width: 100%;
-  padding: 1vw;
   border: 1px solid black;
+  border-radius: 10px;
   box-shadow: 5px 5px gray;
   display: block;
+  background-color: #fff;
+  padding: 2vw;
 }
 
 .post-title {
@@ -13,18 +15,18 @@
 }
 
 .post-form {
-  padding: 0 15vw;
+  padding: 2vw;
 }
 
 .post-form input {
-  width: 100%;
+  width: 90%;
   height: 2em;
   margin-bottom: 1em;
   border: 1px solid gray;
 }
 
 .post-form textarea {
-  width: 100%;
+  width: 90%;
   min-height: 8em;
   margin-bottom: 1em;
   border: 1px solid gray;
@@ -32,6 +34,7 @@
 }
 
 .post-form__label {
+  font-size: 1.5em;
   margin-bottom: 1em;
   text-transform: capitalize;
 }
@@ -39,21 +42,23 @@
 .post-form button {
   height: 3em;
   width: 8em;
-  border: 1px solid orange;
+  border: 2px solid #fbc968;
+  border-radius: 5px;
   outline: none;
   font-size: 1em;
   background: none;
-  color: orange;
+  background-color: #fbc968;
+  color: #fff;
   cursor: pointer;
 }
 
 .post-form button:hover {
-  border: 1px solid orange;
-  color: white;
-  background: orange;
+  border: 2px solid #fbc968;
+  color: #fbc968;
+  background: #fff;
 }
 
 .post-error {
-  color: red;
+  color: #e7624f;
   margin-bottom: 1em;
 }
