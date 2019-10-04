@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Install json-server for Mock API Server:
 ### `npm install -g json-server`
-Start the server:
+Run the server on the root directory of project:
 ### `json-server --watch db.json --port 3001`
 And run the project with:
 ### `npm start`

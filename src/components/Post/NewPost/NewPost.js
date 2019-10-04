@@ -1,6 +1,7 @@
 import React from 'react'
 import './newpost.css'
 import Input from '../../commons/Input'
+import api from "../../../apis"
 
 class NewPost extends React.Component {
   
@@ -15,14 +16,13 @@ class NewPost extends React.Component {
   }
 
   componentDidMount = () => {
-    fetch('http://localhost:3001/posts')
-    .then(res => res.json())
+    api.post.list()
+    .then(res => res && res.json())
     .then(data => {
-      this.setState({data:data})
+      if (data) {
+        this.setState({data:data})
+      }
     })
-    .catch(() => {
-      alert('Api call Failed')
-    }) 
   }
 
   onChange = e => {
@@ -36,30 +36,23 @@ class NewPost extends React.Component {
     const { title, content, author } = this.state.field
     const id = this.state.data.length + 1
     if (title && content && author) {
-      fetch('http://localhost:3001/posts', {
-        method: 'post',
-        headers: {'Content-Type':'application/json'},
-        body: JSON.stringify({
-          "id": id,
-          ...this.state.field
-        })
-      })
+
+      api.post.add(id, title, content, author)
       .then(res => {
         if(res.status === 200 || res.status === 201){
           alert('Post Saved')
           this.props.history.push('/')
         } else {
-          alert('Server error')
-        }
-        
+          alert('Failed to save')
+        } 
       })
-      .catch(() => {
-        alert('Saving failed')
-      })
+
     } else {
+
       this.setState({
         error: 'Please fill in all fields'
       })
+      
     }
   }
 

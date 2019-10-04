@@ -1,6 +1,7 @@
 import React from 'react'
 import './listpost.css'
 import { withRouter } from 'react-router-dom'
+import api from "../../../apis"
 
 const ListItem = ({data, history}) => {
   return data.map(item => (
@@ -17,14 +18,13 @@ class ListPost extends React.Component {
   }
 
   componentDidMount = () => {
-    fetch('http://localhost:3001/posts')
-    .then(res => res.json())
+    api.post.list()
+    .then(res => res && res.json())
     .then(data => {
-      this.setState({data:data})
+      if (data) {
+        this.setState({data:data})
+      }
     })
-    .catch(() => {
-      alert('Api call Failed')
-    }) 
   }
 
   render(){

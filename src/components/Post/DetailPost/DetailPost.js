@@ -1,5 +1,6 @@
 import React from 'react'
 import './detailpost.css'
+import api from "../../../apis"
 
 class DetailPost extends React.Component {
   state = {
@@ -10,13 +11,12 @@ class DetailPost extends React.Component {
   componentDidMount = () => {
     const id = this.props.match.params.id
     
-    fetch(`http://localhost:3001/posts/${id}`)
-    .then(res => res.json())
-    .then(post => {
-      this.setState({post:post})
-    })
-    .catch(() => {
-      alert('Api call Failed')
+    api.post.detail(id)
+    .then(res => res && res.json())
+    .then(data => {
+      if (data) {
+        this.setState({post:data})
+      }
     })
     
   }
